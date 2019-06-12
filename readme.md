@@ -1,13 +1,13 @@
 # EngZ
-A very Simple Url Shortner on Laravel Framework 5.3 for demonstrate purpose.
+A very Simple Url Shortner built on Laravel Framework 5.3 for demonstrate purpose.
 
 ## What's New
 this Url-Shortner simply can generate a very short url slugs that consists of only english characters and numbers [a-z][0-9].  
 it will genrate 36 Url slugs consists of 1 character or digit.  
-and 1296 url slugs consists of 2 characters.  
-and +36k url slugs consists of 3 characters.  
-and +1.6m url slugs consists of 4 characters.  
-and +60m url slugs consists of 5 characters.  
+1296 url slugs that consists of only 2 characters.  
++36k url slugs that consists of only 3 characters.  
++1.6m url slugs that consists of only 4 characters.  
++60m url slugs that consists of only 5 characters.  
 
 Which means that you can generate More than a Million and half url slugs with a 4 characters length.  
 And if you need more then you can generate more than 60 million slugs only 5 characters length.  
