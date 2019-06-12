@@ -1,0 +1,141 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	color: #fff;
+	background: #181818;
+	font-weight: normal;
+	font-size: 14px;
+	background: url("/img/background.jpg") no-repeat;
+	background-attachment: center;
+	background-size: cover;
+}
+a {	text-decoration: none;}
+
+header, section {
+	max-width: 960px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 0 auto;
+    padding: 30px;
+	font-family: "arial";
+}
+.logo {
+	font-size: 25px;
+	font-weight: bolder;
+	float: left;
+}
+.logo a {
+	color: white;
+}
+nav {
+	float: right;
+}
+nav ul li {
+	list-style: none;
+	display: inline;
+	margin-left: 20px;
+}
+nav ul li a {
+	color: #fff;
+}
+
+section {
+	text-align: center;
+    height: 65%;
+	margin: 40px auto;
+}
+section > div {
+	display: table;
+    width: 100%;
+    height: 100%;
+}
+section > div form,
+section > div div.info-table {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+form input, form button {
+	padding: 20px 15px;
+	border: none;
+}
+form input { 
+	width: 50%;
+	max-width: 500px;
+}
+
+form button {
+	width: 20%;
+	max-width: 150px;
+	color: white;
+	background-color: #2196f3;
+	cursor: pointer;
+}
+
+section > div div.info-table .info {
+	background-color: white;
+	color: #444;
+	display: table;
+	width: 100%;
+}
+section > div div.info-table .info .call-to-action {
+	padding: 30px 15px;
+	background-color: #2196f3;
+	color: white;
+	display: block;
+}
+section > div div.info-table .info .info-title,
+section > div div.info-table .info .info-body {
+	display: block;
+}
+section > div div.info-table .info .info-title {
+	background-color: #f9f9f9;
+	padding: 35px 0px;
+}
+section > div div.info-table .info .info-body {
+    word-break: break-all;
+	padding: 35px 15px;
+}
+section > div div.info-table .info .info-body a {
+    color: #333;
+}
+
+@media (min-width: 768px) {
+	section > div div.info-table .info:not(:last-child) {
+		border-bottom: 1px solid #eaeaea;
+	}
+	section > div div.info-table .info .info-title,
+	section > div div.info-table .info .info-body {
+		display: inline-block;
+		padding: 35px 15px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	section > div div.info-table .info .info-title {
+		width: 29%;
+		border-right: 1px solid #f0f0f0;
+	}
+	section > div div.info-table .info .info-body {
+		width: 70%;
+	}
+}
+
+.err-box {
+	background: #e25353;
+    padding: 23px 12px;
+    width: 70%;
+    margin: 14px auto;
+    font-family: arial;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+	margin: 15px auto;
+}
