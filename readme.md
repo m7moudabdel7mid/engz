@@ -1,27 +1,72 @@
-# Laravel PHP Framework
+# EngZ
+A very Simple Url Shortner on Laravel Framework 5.3 for demonstrate purpose.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## What's New
+this Url-Shortner simply can generate a very short url slugs that consists of only english characters and numbers [a-z][0-9].  
+it will genrate 36 Url slugs consists of 1 character or digit.  
+and 1296 url slugs consists of 2 characters.  
+and +36k url slugs consists of 3 characters.  
+and +1.6m url slugs consists of 4 characters.  
+and +60m url slugs consists of 5 characters.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Which means that you can generate More than a Million and half url slugs with a 4 characters length.  
+And if you need more then you can generate more than 60 million slugs only 5 characters length.  
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+And the most important thing is that all slugs consists of only english characters and digits, so the generated urls will look just great and very neat.  
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Installation
 
-## Contributing
+Clone the repository-
+```
+https://github.com/m7moudm7mmed/EngZ.git
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Then cd into the folder with this command-
+```
+cd engz
+```
 
-## Security Vulnerabilities
+Then run a composer install
+```
+composer install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Then create a environment file using this command-
+```
+cp .env.example .env
+```
 
-## License
+Then edit `.env` file with appropriate credential for your database server. Just edit these two parameter(`DB_USERNAME`, `DB_PASSWORD`).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Then create a database named `engz` and then do a database migration using this command-
+```
+php artisan migrate
+```
+
+
+At last generate application key, which will be used for password hashing, session and cookie encryption etc.
+```
+php artisan key:generate
+```
+
+## Run server
+
+Run server using this command-
+```
+php artisan serve
+```
+
+
+Then go to `http://localhost:8000` from your browser and test the app.
+
+
+
+## Ask a question?
+
+If you have any query please contact at m7moudm7mmed@gmail.com
+
+## Screenshot
+
+![Home Page](/screenshots/1.png)
+![Statistcs Page](/screenshots/2.png)
