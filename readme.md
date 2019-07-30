@@ -64,7 +64,7 @@ Then go to `http://localhost:8000` from your browser and test the app.
 
 ## Ask a question?
 
-If you have any query please contact at m7moudm7mmed@gmail.com
+If you have any question please contact at m7moudm7mmed@gmail.com
 
 ## Screenshot
 
